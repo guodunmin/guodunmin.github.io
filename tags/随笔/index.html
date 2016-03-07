@@ -346,11 +346,12 @@
     
     
     (function() {
+    var proto = 'https://';
     var dsq = document.createElement('script');
     dsq.id = 'dsq-count-scr';
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = proto + disqus_shortname + '.disqus.com/count.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>
