@@ -64,24 +64,26 @@
         dsq.async = false;
         dsq.src = proto + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        
         commentBtn.parentNode.removeChild(commentBtn);
-        if (commentBtn) {
-            if (document.addEventListener) {
-                commentBtn.addEventListener('click', showComments, false);
-            } else {
-                commentBtn.attachEvent('onclick', showComments);
-            }
-        }
     };
+    var disqusCount = function(){
+        //disqus_thread
+        console.log('disqusCount');
+    };
+    if (commentBtn) {
+        if (document.addEventListener) {
+            commentBtn.addEventListener('click', showComments, false);
+        } else {
+            commentBtn.attachEvent('onclick', showComments);
+        }
+    }
     $(document).on('ready', function () {
-        
         var commentsCount = document.querySelectorAll('.disqus-comment-count');
         if (/^#disqus|^#comment/.test(location.hash)){
             showComments();
         //}else if (commentsCount.length && location.hostname === 'guodunmin.com'){
         } else if (commentsCount.length){
-            //disqusCount();
+            disqusCount();
             // 默认显示评论数 \themes\icarus\layout\comment\index.ejs
         }
     });
