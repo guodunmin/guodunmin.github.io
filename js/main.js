@@ -50,7 +50,7 @@
         $('body, html').animate({ scrollTop: 0 }, 600);
     });
 
-	//gdm 2016-03-07
+	//:gdm 2016-03-07
     var disqus_conf = {
     };
     var disqusShortName = "guodunmin";
@@ -87,5 +87,6 @@
             // 默认显示评论数 \themes\icarus\layout\comment\index.ejs
         }
     });
+	//.gdm 2016-03-07
     
 })(jQuery);

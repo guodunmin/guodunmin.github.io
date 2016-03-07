@@ -9,47 +9,6 @@ body:after {
 body:after {
   clear: both;
 }
-.disqus_comments {
-  max-width: 640px;
-  min-height: 40px;
-  text-align: center;
-  margin: 5px auto;
-  font-family: sans-serif;
-  word-wrap: break-word;
-}
-.disqus_comments .show-comments {
-  background-color: #ebebeb;
-  color: #646464;
-  font-family: "RobotoDraft", "Roboto", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", "SimSun", sans-serif;
-  font-size: 15px;
-  text-align: center;
-  line-height: 36px;
-  padding: 8px 10px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  border: 1px solid #ebebeb;
-}
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: 0.2em;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  margin-left: 0.2em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.icon-chat:before {
-  content: '\e815';
-}
 html,
 body,
 div,
