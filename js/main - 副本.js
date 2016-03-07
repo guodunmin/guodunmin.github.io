@@ -50,40 +50,4 @@
         $('body, html').animate({ scrollTop: 0 }, 600);
     });
 
-	//gdm 2016-03-07
-    var disqus_conf = {
-    };
-    var disqusShortName = "guodunmin";
-    var commentBtn = document.querySelector('.show-comments');
-    var showComments = function(){
-        var disqus_shortname = disqusShortName;
-        var proto = 'https://';
-        var dsq = document.createElement('script');
-        dsq.id = 'dsq-count-scr';
-        dsq.type = 'text/javascript';
-        dsq.async = false;
-        dsq.src = proto + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        
-        commentBtn.parentNode.removeChild(commentBtn);
-        if (commentBtn) {
-            if (document.addEventListener) {
-                commentBtn.addEventListener('click', showComments, false);
-            } else {
-                commentBtn.attachEvent('onclick', showComments);
-            }
-        }
-    };
-    $(document).on('ready', function () {
-        
-        var commentsCount = document.querySelectorAll('.disqus-comment-count');
-        if (/^#disqus|^#comment/.test(location.hash)){
-            showComments();
-        //}else if (commentsCount.length && location.hostname === 'guodunmin.com'){
-        } else if (commentsCount.length){
-            //disqusCount();
-            // 默认显示评论数 \themes\icarus\layout\comment\index.ejs
-        }
-    });
-    
 })(jQuery);
