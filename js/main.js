@@ -52,17 +52,21 @@
 
     //:gdm 20160314
     //把 http 跳转到 https
-    var winLoc = window.location;
-    var url = winLoc.href;
-    if (winLoc.hostname == 'localhost' || winLoc.port == '4000'){
-        
-    }
-    else if (url.indexOf('http://')===0) { //排除参数中包含'http://'的情况
-        url = url.replace('http://','https://');
-        window.location.replace(url); //直接替换不记录历史
-    }
-    else{
-        
+    //最佳实践，该放到 head.ejs [hexo]\themes\icarus\layout\common\
+    var isHttps = false; //是否启用
+    if(isHttps) {
+        var winLoc = window.location;
+        var url = winLoc.href;
+        if (winLoc.hostname == 'localhost' || winLoc.port == '4000'){
+            
+        }
+        else if (url.indexOf('http://')===0) { //排除参数中包含'http://'的情况
+            url = url.replace('http://','https://');
+            window.location.replace(url); //直接替换不记录历史
+        }
+        else{
+            
+        }
     }
     //.gdm 20160314
 
