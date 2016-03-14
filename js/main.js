@@ -50,6 +50,22 @@
         $('body, html').animate({ scrollTop: 0 }, 600);
     });
 
+    //:gdm 20160314
+    //把 http 跳转到 https
+    var winLoc = window.location;
+    var url = winLoc.href;
+    if (winLoc.hostname == 'localhost' || winLoc.port == '4000'){
+        
+    }
+    else if (url.indexOf('http://')===0) { //排除参数中包含'http://'的情况
+        url = url.replace('http://','https://');
+        window.location.replace(url); //直接替换不记录历史
+    }
+    else{
+        
+    }
+    //.gdm 20160314
+
 	//:gdm 2016-03-07
     var disqus_conf = {
     };
