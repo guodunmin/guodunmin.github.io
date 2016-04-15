@@ -1,0 +1,59 @@
+.article-entry ruby {
+    font-size: 1.5em;
+}
+a.fancybox {
+	display: inline-block;
+}
+.ruby-character {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0 auto;
+    text-align: center;
+}
+#syqf-quanpu ol {
+    counter-reset: ordered;
+    list-style-type: none;
+    text-align: left;
+}
+#syqf-quanpu ol li {
+	line-height: 2.0em;
+}
+#syqf-quanpu ol li:before {
+    counter-increment: ordered 1; 
+    content: counter(ordered) ". ";
+    margin: 0.25em 0.5em 0 0;
+}
+#syqf-quanpu ol li:first-child:before
+,#syqf-quanpu ol li:last-child:before {
+    counter-reset: ordered;
+    counter-increment: ordered 0; 
+    content: "";
+    margin: 0;
+}
+
+#syqf-quanpu ol li span.en:before {
+	content: "|";
+	margin: 0.25em 0;
+}
+
+#switcher {
+	width: 100%;
+}
+/* list reset to 0 */
+/*
+.article-entry ol[start="0"] {
+    counter-reset: ordered; 
+}
+.article-entry ol[start="0"] li:first-child
+,.article-entry ol[start="0"] li:last-child {
+    list-style-type: none;
+}
+
+
+
+.article-entry ol[start="0"] li {
+}
+.article-entry ol[start="0"] li:before {
+    content: "0..";
+}
+*/

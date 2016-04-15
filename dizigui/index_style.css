@@ -1,0 +1,93 @@
+#dizigui {
+	
+}
+#dizigui:after
+,#temp:after
+,.clearBoth {
+	content: "";
+	clear: both;
+}
+#dizigui ruby {
+	display: block;
+	width:25%;
+	font-size: 1.2em;
+	line-height: 1.6em;
+	margin: 0.1em 0;
+	float: left;
+	text-indent: 3em; /*43px*/
+}
+#dizigui ruby rp {
+	text-indent: 0;
+}
+#dizigui ruby rt {
+	font-size: 0.8em;
+	text-indent: 0;
+}
+#dizigui h3 {
+	display: block;
+	width: 100%;
+	float: left;
+}
+#dizigui h3:before
+,#dizigui h3:after {
+	content: "";
+	clear: both;
+}
+.col-4 {
+	width: 25%;
+}
+
+#dizigui-wrap:after {
+	content: "";
+	clear: both;
+}
+
+#dizigui-wrap h3 {
+	display: block;
+	width: 100%;
+	float: left;
+	line-height: 0;
+    margin: 1.0em 0;
+}
+#dizigui-wrap h3:before
+,#dizigui-wrap h3:after {
+	content: "";
+	clear: both;
+}
+
+#dizigui-wrap ruby {
+	display: block;
+	width:6%;
+	font-size: 1.2em;
+	line-height: 1.6em;
+	margin: 0.1em 0;
+	float: left;
+	text-indent: 0;
+    text-align: center;
+}
+#dizigui-wrap ruby rp {
+	text-indent: 0;
+}
+#dizigui-wrap ruby rt {
+	font-size: 0.8em;
+	text-indent: 0;
+}
+
+#dizigui-wrap ins 
+,#dizigui-wrap i 
+,#dizigui-wrap span {
+	display: block;
+	width: 8%;
+	float: left;
+}
+
+h3#dizigui-title sup {
+    top: 3em;
+}
+
+h1.article-title sup {
+	top: -1.5em;
+	font-size: 0.5em;
+	position: relative;
+    vertical-align: baseline;
+}
