@@ -1,3 +1,117 @@
+
+/* gdm: 160416 FONT PATH 
+文悦古体仿宋 http://wytype.com/typeface/WyueGutiFangsong/
+非商业用途 http://wytype.com/purchase/
+Wyue-GutiFangsong-NC_deliverable.otf
+
+@font-face {
+  font-family: 'WyueGutiFangsong';
+  src: url('/assets/fonts/Wyue-GutiFangsong-NC_deliverable.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+
+/* gdm: 160417
+书法家秀隶体 - 有字库 http://www.youziku.com/fontdetail/index/45809
+使用引用 API：<link href="http://api.youziku.com/webfont/CSS/57134837f629d80ec4eba27c" rel="stylesheet" type="text/css">
+或直接写下：
+@font-face {
+	font-family: 'shufajia-xiuli2c87b5f3e5635';
+	……
+}
+.css2c87b5f3e5635{font-family: 'shufajia-xiuli2c87b5f3e5635';}
+*/
+@font-face {
+	font-family: 'shufajia-xiuli2c87b5f3e5635';
+	src: url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/userwebfont/22069/57134837f629d80ec4eba27c/57134837f629d80ec4eba27c.gif');
+	src: url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/userwebfont/22069/57134837f629d80ec4eba27c/57134837f629d80ec4eba27c.gif?#iefix') format('embedded-opentype'),     url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/userwebfont/22069/57134837f629d80ec4eba27c/57134837f629d80ec4eba27c.bmp') format('woff'),     url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/userwebfont/22069/57134837f629d80ec4eba27c/57134837f629d80ec4eba27c.jpg') format('truetype'),     url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/userwebfont/22069/57134837f629d80ec4eba27c/57134837f629d80ec4eba27c.png#shufajia-xiuli') format('svg');   
+	font-weight: normal;
+	font-style: normal;
+}
+/* gdm: 160417
+书法家豪楷体 - 有字库 http://www.youziku.com/fontdetail/index/46456
+<link href="http://api.youziku.com/webfont/CSS/57138743f629d80ec4eba291" rel="stylesheet" type="text/css">
+class="css2c971a6e95635"
+*/
+@font-face {
+	font-family: 'SFJ_haokait2c971a6e95635';
+	src: url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/userwebfont/22069/57138743f629d80ec4eba291/57138743f629d80ec4eba291.gif');
+	src: url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/userwebfont/22069/57138743f629d80ec4eba291/57138743f629d80ec4eba291.gif?#iefix') format('embedded-opentype'),     url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/userwebfont/22069/57138743f629d80ec4eba291/57138743f629d80ec4eba291.bmp') format('woff'),     url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/userwebfont/22069/57138743f629d80ec4eba291/57138743f629d80ec4eba291.jpg') format('truetype'),     url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/userwebfont/22069/57138743f629d80ec4eba291/57138743f629d80ec4eba291.png#SFJ_haokait') format('svg');   
+	font-weight: normal;
+	font-style: normal;
+}
+.css2c971a6e95635{ font-family: 'SFJ_haokait2c971a6e95635'; }
+
+#dizigui-wrap
+,h1.article-title {
+  color: #565a5f;
+  background: #f5f8f9;
+  font: 14px "SFJ_haokait2c971a6e95635", "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+	h1.article-title {
+		font-size: 2.0em;
+		line-height: 1.6em;
+		background: none;
+	}
+
+#dizigui-wrap:after {
+	content: "";
+	clear: both;
+}
+
+#dizigui-wrap h3 {
+	display: block;
+	width: 100%;
+	float: left;
+	line-height: 0;
+    margin: 1.0em 0;
+}
+#dizigui-wrap h3:before
+,#dizigui-wrap h3:after {
+	content: "";
+	clear: both;
+}
+
+#dizigui-wrap ruby {
+	display: block;
+	width: 7%;
+	font-size: 2.0em;
+	line-height: 1.6em;
+	margin: 0.1em 0;
+	float: left;
+	text-indent: 0;
+    text-align: center;
+}
+#dizigui-wrap ruby rp {
+	text-indent: 0;
+}
+#dizigui-wrap ruby rt {
+	font-size: 0.5em;
+	text-indent: 0;
+}
+
+#dizigui-wrap ins 
+,#dizigui-wrap i 
+,#dizigui-wrap span {
+	display: block;
+	width: 5%;
+	float: left;
+}
+
+h3#dizigui-title sup {
+    top: 3em;
+}
+
+.article-header .article-title sup {
+	top: -1.5em;
+	font-size: 0.5em;
+	position: relative;
+    vertical-align: baseline;
+}
+
+/* 以下为测试数据 */
 #dizigui {
 	
 }
@@ -37,57 +151,3 @@
 	width: 25%;
 }
 
-#dizigui-wrap:after {
-	content: "";
-	clear: both;
-}
-
-#dizigui-wrap h3 {
-	display: block;
-	width: 100%;
-	float: left;
-	line-height: 0;
-    margin: 1.0em 0;
-}
-#dizigui-wrap h3:before
-,#dizigui-wrap h3:after {
-	content: "";
-	clear: both;
-}
-
-#dizigui-wrap ruby {
-	display: block;
-	width:6%;
-	font-size: 1.2em;
-	line-height: 1.6em;
-	margin: 0.1em 0;
-	float: left;
-	text-indent: 0;
-    text-align: center;
-}
-#dizigui-wrap ruby rp {
-	text-indent: 0;
-}
-#dizigui-wrap ruby rt {
-	font-size: 0.8em;
-	text-indent: 0;
-}
-
-#dizigui-wrap ins 
-,#dizigui-wrap i 
-,#dizigui-wrap span {
-	display: block;
-	width: 8%;
-	float: left;
-}
-
-h3#dizigui-title sup {
-    top: 3em;
-}
-
-h1.article-title sup {
-	top: -1.5em;
-	font-size: 0.5em;
-	position: relative;
-    vertical-align: baseline;
-}
