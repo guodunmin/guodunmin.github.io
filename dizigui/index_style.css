@@ -36,8 +36,8 @@ class="css2c971a6e95635"
 */
 @font-face {
 	font-family: 'SFJ_haokait2c971a6e95635';
-	src: url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/userwebfont/22069/57138743f629d80ec4eba291/57138743f629d80ec4eba291.gif');
-	src: url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/userwebfont/22069/57138743f629d80ec4eba291/57138743f629d80ec4eba291.gif?#iefix') format('embedded-opentype'),     url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/userwebfont/22069/57138743f629d80ec4eba291/57138743f629d80ec4eba291.bmp') format('woff'),     url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/userwebfont/22069/57138743f629d80ec4eba291/57138743f629d80ec4eba291.jpg') format('truetype'),     url('http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/webfonts/css/userwebfont/22069/57138743f629d80ec4eba291/57138743f629d80ec4eba291.png#SFJ_haokait') format('svg');   
+	src: url('/assets/fonts/youziku/dizigui_484.gif');
+	src: url('/assets/fonts/youziku/dizigui_484.gif?#iefix') format('embedded-opentype'),     url('/assets/fonts/youziku/dizigui_484.bmp') format('woff'),     url('/assets/fonts/youziku/dizigui_484.jpg') format('truetype'),     url('/assets/fonts/youziku/dizigui_484.png#SFJ_haokait') format('svg');   
 	font-weight: normal;
 	font-style: normal;
 }
@@ -110,6 +110,55 @@ h3#dizigui-title sup {
 	position: relative;
     vertical-align: baseline;
 }
+
+@media screen and (max-width:767px) {  /* 实际视窗宽 210~960px */
+	#dizigui-wrap ruby { 
+		width: 14%;
+	}
+	#dizigui-wrap span {
+		width: 10%;
+	}
+}
+@media screen and  (min-width:768px) {
+	#dizigui-wrap ruby { 
+		width: 7%;
+	}
+	#dizigui-wrap span {
+		width: 5%;
+	}
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) { /* 实际视窗宽 1000~1200px，为适应hexo 侧边栏与正文并列争用时。*/
+	#dizigui-wrap ruby { 
+		width: 14%;
+	}
+	#dizigui-wrap span {
+		width: 10%;
+	}
+}
+@media (min-width:992px) {
+}
+@media (min-width:1200px) {
+}
+
+/* 侧边栏样式 style.css .L1656, 
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+  #sidebar {
+    display: inline;
+    float: left;
+    width: 29.230769230769234%;
+    margin: 0 0.769230769230769%;
+  }
+}
+*/
+
+/* 魅族note 视窗测试 min-width:640px 
+@media screen and  (min-width:641px) { 
+	#dizigui-wrap:before {
+		content: "view-port:";
+	}
+}
+*/
+
 
 /* 以下为测试数据 */
 #dizigui {

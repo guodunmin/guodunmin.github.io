@@ -30,6 +30,9 @@ a.fancybox {
     content: "";
     margin: 0;
 }
+#syqf-quanpu span.en ruby {
+	font-size: 1em;
+}
 
 #syqf-quanpu ol li span.en:before {
 	content: "|";
