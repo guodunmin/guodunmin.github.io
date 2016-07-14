@@ -1,0 +1,438 @@
+body {
+    background-color: #FFF1E0; 
+    position: relative;
+    font: 14px "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+    color: #565a5f;
+}
+h2,h3
+,p,div,ul,li
+,span {
+    margin: 0;
+    padding: 0;
+}
+div {
+    display: block;
+}
+a {
+	
+}
+/* toc */
+#resume-container {
+    position: relative;
+}
+#resume-container > .outer{
+    width: 210mm;
+    height: 297mm;
+    background-color: #FFF; 
+    margin: 10px auto;
+    overflow-y: hidden;
+}
+#profile {
+    width: 87.5mm;
+    height: 297mm;
+    float: left;
+} 
+#main {
+    width: 94.5mm;
+    height: 297mm;
+    float: left;
+    margin: 0 10mm 0 18mm;
+}
+#sidebar {
+    width: 0mm;
+    height: 0mm;
+    float: left;
+} 
+/* toc */
+.profile-inner {
+    margin-top: 34.5mm;
+    height: 100%;
+    background-color: #3D3D3D;
+    color: #aeaeae;
+}
+.profile-top {
+    height: 34.5mm;
+}
+.profile-bottom {
+    height: 100%;
+    background-color: #3D3D3D;
+}
+
+.hdnB { display:none; }
+
+/* toc .base-info */
+.base-info {
+    position: relative;
+    text-align: center;
+    color: #fff;
+	text-shadow: 0.01em 0.01em 0.01em;
+}
+.base-info > [id]{
+    font-size: 1em;
+    font-weight: normal;
+}
+    .txt-desc {
+        line-height: 0px;
+        letter-spacing: 0.1em;
+        color: #C8C8C8;
+    }
+#user-avatar {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 150px;
+    background-color: #fff;
+    padding: 7px;
+    position: absolute;
+    top: -97px;
+    left: 83.5px;
+}
+#user-avatar > span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 150px;
+    background-color: #3D3D3D;
+    overflow: hidden;
+}
+#user-avatar > span > img {
+    width: 150px;
+    height: 210px;
+}
+#user-name {
+    width: 100%;
+    display: inline-block;
+    margin: 85px auto 0 auto;
+    font-size: 32px;    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+#user-title {
+    width: 100%;
+    display: inline-block;
+    line-height: 0px;
+    letter-spacing: 0.1em;
+    color:#C8C8C8;
+}
+
+/* toc #user-breaf */
+#user-breaf {
+    /*
+    position: absolute;
+    top: 196px;
+    left: 0px;
+    
+    float: left;*/
+    margin: 51px 20px 0 30px;
+    height: 207px;
+}
+#user-breaf > .widget2-title {
+    top: 196px;
+}
+#user-breaf > .widget2 {
+    margin-top: 100px;
+    text-indent: 2em;
+    line-height: 2em;
+}
+
+/* toc #user-contacts */
+#user-contacts {
+    float: left;
+    margin: 0 0 0 30px;
+    height: 280px;
+}
+#user-contacts > .widget2-title {
+    top: 436px;
+}
+#user-contacts > .widget2 {
+    margin-top: 30px;
+}
+
+#user-contacts > ul {
+    list-style: none;
+}
+#user-contacts > ul li {
+    font-size: 14px;
+    line-height: 3.5em;
+    text-decoration: none;
+    
+}
+#user-contacts > ul li > i {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    border-radius: 0.5em;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    margin-right: 2.0em;
+}
+#user-contacts > ul i:before {
+    vertical-align: baseline;
+    color:#C8C8C8;
+}
+#user-contacts a {
+	color: #C8C8C8;
+	text-decoration:none;
+}
+
+.triangle-left {   
+    width:0;   
+    height:0; 
+    border-top:20px solid transparent; 
+    border-bottom:20px solid transparent; 
+    border-right:10px solid #4689E6;
+}
+.triangle-right {   
+    width:0;   
+    height:0; 
+    border-top: 0px solid transparent; 
+    border-bottom: 10px solid transparent; 
+    border-left: 20px solid #396FB1;
+}
+.fix-trim { /* 修补 空白*/
+    width: 10px;   
+    height: 40px;
+    display: block;
+    float: right;
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    
+}
+
+/* toc #user-certificate */
+#user-certificate {
+    float: left;
+    margin: 70px 20px 0 30px;
+    height: 190px;
+}
+
+#user-certificate > .widget2-title {
+    top: 758px;
+}
+#user-certificate > .widget2 {
+}
+
+#user-certificate > ul {
+    list-style: none;
+    counter-reset:sectioncounter;
+    margin-top: 15px;
+}
+#user-certificate > ul li {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+#user-certificate > ul li:before {
+    content:counter(sectioncounter) ". ";
+    counter-increment:sectioncounter;
+}
+
+/* toc #main */
+/* toc #user-edu */
+
+#main {
+    
+}
+.main-inner {
+    margin-top: 14mm;
+    height: 100%;
+    background-color: #fff;
+    color: #aeaeae;
+}
+.widget-wrap {
+    font-size: 1.0em;
+    line-height: 1.5em;
+    text-align: left;
+    word-wrap: break-word;
+    color: #575757;
+    font-weight: bold;
+    overflow-x: hidden;
+}
+.widget-wrap ul li {
+    list-style: none;
+}
+.widget-wrap:after {
+    content: "";
+    display: block;
+    height: 20px;
+    clear: both;
+}
+
+.widget-title {
+    line-height: 1em;
+    text-decoration: none;
+    border-bottom: 1px solid #ECECEC;
+    
+    font-size: 16px;
+    line-height: 28px;
+    color: #3D3D3D;
+    letter-spacing: 0.3em;
+}
+.widget-title > i {
+    margin-right: 20px;
+}
+.widget {
+    margin-top:20px;
+}
+.widget span {
+    /*margin-top: 0.5em;
+    display: block;*/
+    font-size: 14px;
+    color:#4E8EE8;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.widget p {
+    margin: 0.5em 0;
+}
+.widget li:last-child {
+    margin-bottom: -0.5em; /* 为平衡上条语句 作用在最后一个P元素，用来修正。*/
+}
+
+/* toc #user-edu-list */
+#user-edu {
+    overflow-x: visible;
+}
+#ps-user-edu-list {
+    position: relative;
+    width: 360px;
+    height: 130px;
+    padding-right: 25px;
+}
+#user-edu-list {
+    
+}
+
+/* toc #user-project */
+#user-project {
+    overflow-x: visible;
+	/*text-shadow: 0.05em 0.05em 0.05em;*/
+}
+#ps-user-project-list {
+    position: relative;
+    width: 360px;
+	height: 500px;
+    padding-right: 25px;
+}
+
+/* toc #user-skill-list */
+#user-skill-list ul {
+    
+}
+#user-skill-list ul li {
+    display: block;
+    max-width: 180px;
+    float: left;
+    margin: 0 9px 8px 0;
+    overflow: hidden;
+}
+#user-skill-list ul span {
+    
+}
+
+/* toc .progress-bar-wrap */
+.progress-bar-wrap {
+    color: #575757;
+}
+.progress-bar-wrap .progress-bar-title {
+}
+.progress-bar-wrap .progress-bar-bg { /* background */
+    position: relative;
+    overflow-y: hidden;
+    color: #EAEAEA;
+}
+.progress-bar-wrap .progress-bar-fg { /* foreground */
+    display: inline-block;
+    position: absolute;
+    top:0;
+    left:0; 
+    width: 10%;
+    color: #4E8EE8;
+    background-color: #fff;
+}
+.progress-bar-wrap *[class~="fa"] {
+    height: 20px;
+    line-height: 20px;
+}
+.progress-bar-wrap *[class~="fa"]:before{
+    content: "";
+    font-size: 16px;
+    letter-spacing: 0.2em;
+}
+.progress-bar-wrap .fa-clock-o-x10:before {
+    content: "\f017\f017\f017\f017\f017\f017\f017\f017\f017\f017";
+}
+.progress-bar-wrap .fa-circle-x10:before {
+    content: "\f111\f111\f111\f111\f111\f111\f111\f111\f111\f111";
+}
+
+/* toc #user-habbit */
+/*
+#user-habbit-list:before,
+#user-habbit-list:after {
+    content: "";
+    margin-top: 1px;
+}
+*/
+#user-habbit-list {
+    width: 114%;
+    /* overflow: hidden; */
+    margin-left: -25px;
+}
+#user-habbit-list ul {
+    margin-top: 26px;
+    margin-top: 0;
+}
+#user-habbit-list ul li {
+    margin: 0;
+}
+#user-habbit-list ul li span {
+    display: block;
+    float: left;
+    width: 20%;
+    min-width: 32px;
+    text-align: center;
+    font-size: 2em;
+}
+#user-habbit-list ul li span:before {
+    color: #696969;
+}
+.favorite-taiji-syqf {
+    overflow: hidden;
+}
+.favorite-taiji-syqf img {
+    display: block;
+    width:30px; 
+    height: 30px;
+    vertical-align: baseline;
+    cursor: pointer;
+    margin: 5px auto 0;
+}
+
+#user-habbit .fa-star {
+    margin: 0 18px 0 2px;
+}
+#user-habbit .fa-star:before {
+    content: "\f005";
+    margin: 0 0 0 2px;
+}
+#user-habbit .icon.star {
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    background: url(../img/star.gif) 0 0 no-repeat;
+    margin-right: 19px;
+    margin-left: -41px;
+}
+.progress-bar {
+}
+.progress-bar div {
+    
+}
+.progress-bar div i {
+    
+}
+
