@@ -1,265 +1,720 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Guodunmin&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="reading notes">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Guodunmin's Blog">
+<meta property="og:url" content="http://guodunmin.com/index.html">
+<meta property="og:site_name" content="Guodunmin's Blog">
+<meta property="og:description" content="reading notes">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Guodunmin's Blog">
+<meta name="twitter:description" content="reading notes">
+    
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+    
 
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/0_resume.css">
-    <link rel="stylesheet" href="css/0_resume_patch.css">
-    <link rel="stylesheet" href="css/0_font-awesome450.css">
-    <link rel="stylesheet" href="css/perfect-scrollbar-0.6.10.css">
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    
+        <link rel="icon" href="/assets/favicon.ico" />
+    
+
+    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/open-sans/styles.css">
+    <link rel="stylesheet" href="/vendor/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/vendor/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+    
+    
+    
+
 </head>
-
 <body>
-    <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-    <!-- Add your site or application content here 
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        -->
-
-    <div id="resume-container">
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
         <div class="outer">
-
-            <aside id="profile">
-                <div class="profile-inner">
-                    <div class="base-info profile-block">
-                        <a id="user-avatar" href="http://guodunmin.com" title="visit my blog">
-                            <span>
-                                <img  src="img/avatar_guochao_150x210_web.jpg">
-                            </span>
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">Guodunmin&#39;s Blog</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">Home</a>
+                
+                    <a class="main-nav-link" href="/archives">Archives</a>
+                
+                    <a class="main-nav-link" href="/categories">Categories</a>
+                
+                    <a class="main-nav-link" href="/tags">Tags</a>
+                
+                    <a class="main-nav-link" href="/about">About</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/assets/avatar_guodunmin.png" />
+                            <i class="fa fa-caret-down"></i>
                         </a>
-                        <h2 id="user-name">郭　超</h2>
-                        <h3 id="user-title">互联网前端开发工程师</h3>
-                        <!-- gdm:自我评价 -->
-                        <div id="user-breaf" class="widget2-wrap">
-                            <h3 class="widget2-title">
-                                <span>自我评价</span><i class="fix-trim"></i>
-                            </h3>
-                            <p class="widget2">
-                                待人热情诚恳，做事稳重谨慎，对生活积极乐观，对工作负责认真，并能够积极主动地发现工作中的问题，敢于面对、善于思考、勇于解决。
-                            </p>
-                        </div>
-                        <!-- gdm.自我评价 -->
-                        <!-- gdm:个人资料 -->
-                        <div id="user-contacts" class="widget2-wrap">
-                            <h3 class="widget2-title">
-                                <span>个人资料</span><i class="fix-trim"></i>
-                            </h3>
-                            <ul class="widget2 txt-list">
-                                <li><i class="icon fa fa-user"></i>年龄：1984/01</li>
-                                <li><i class="icon fa fa-phone"></i>电话：13522267302</li>
-                                <li><i class="icon fa fa-envelope"></i>邮箱：418329288@qq.com</li>
-                                <li><i class="icon fa fa-map-marker"></i>网址：guodunmin.com（<a href="#" id="back-to-top">点击头像</a>）</li>
-                                <li><i class="icon fa fa-weixin"></i>微信：（用手机号定位）</li>
-                            </ul>
-                        </div>
-                        <!-- gdm.个人资料 -->
-                        <!-- gdm:奖项荣誉 -->
-                        <div id="user-certificate" class="widget2-wrap">
-                            <h3 class="widget2-title">
-                                <span>奖项荣誉</span><i class="fix-trim"></i>
-                            </h3>
-                            <ul class="widget2">
-                                <li><i></i>中科汇联2012年度 优秀项目组，优秀员工</li>
-                                <li><i></i></li>
-                                <li><i></i></li>
-                                <li><i></i></li>
-                                </ol>
-                        </div>
-                        <!-- gdm.奖项荣誉 -->
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
 
-                    </div>
-                    <div class="hdnB">
-                        <img id="user-avatar" src="">
-                        <h2 id="user-name">郭敦敏</h2>
-                        <h3 id="user-title">FontEnd Web Developer</h3>
-                        <span id="user-location">
-                            <i class="fa fa-map-marker"></i>
-                            牡丹园 Beijing
-                        </span>
-                    </div>
-                </div>
-            </aside>
-            <section id="main">
-                <div class="main-inner">
-                    <!-- gdm:教育背景 -->
-                    <div id="user-edu" class="widget-wrap">
-                        <h3 class="widget-title"><i class="icon fa fa-graduation-cap"></i>教育背景</h3>
-                        <div id="ps-user-edu-list" class="widget ">
-                            <ul id="user-edu-list">
-                                <li>
-                                    <span>2015年至今</span>
-                                    <span></span>
-                                    <p>百度前端技术学院 IFE 2016
-                                    </p>
-                                    <p>自学 HTML5/CSS3/JS/jQuery/Bootstrap
-                                    </p>
-                                </li>
-                                <li>
-                                    <span>2004.04~2007.04</span>
-                                    <span></span>
-                                    <p>北京经贸职业学院　网络工程（大专）
-                                    </p>
-                                </li>
-                                
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- gdm. -->
-                    <!-- gdm:项目经验 -->
-                    <div id="user-project" class="widget-wrap">
-                        <h3 class="widget-title"><i class="icon fa fa-briefcase"></i>项目经验</h3>
-                        <div id="ps-user-project-list" class="widget">
-                            <ul id="user-project-list">
-                                <li>
-                                    <span>2013.09~2015.05</span>
-                                    <span>北京中科汇联信息科技…　运维部</span>
-                                    <p>北京农村商业银行《驻场运维》<br/>身兼运维管理和dotNET开发，主要负责：管理门户网站日常运维、需求调研、功能分解、工时评估、项目排期、项目测试、投产、代码版本管理等具体事务的全过程统筹管理。常配人员有，开发、策划、美术、实施、运维（面向行方业务人员）、行方服务器运维（与行方相互配合）。
-                                    </p>
-                                </li>
-                                <li>
-                                    <span>2013.01~2013.06</span>
-                                    <span>北京中科汇联信息科技…　项目部</span>
-                                    <p>
-                                        北京农村商业银行 《积分商城项目》<br/>
-1.	主要负责：调研，工作量评估，编程开发，制定系统接口<br/>
-积分商城主要实现 登录管理、购物车管理、企业/个人商品管理、商户管理、订单管理、兑换日志管理。<br/>
-实现了用户信息的线上以数据库业务实体表、Session管理，线下的Cookie管理。<br/>
-积分兑换接口的制定开发与中台（即银行卡的积分业务平台）对接。<br/>
-用户交互体验设计与开发。<br/>
-2.	北京农村商业银行 《门户网站项目之架构方案》<br/>
-制定门户架构方案，面向高负载多并发场景，负责方案设计：<br/>
-架构总分三层：Web端、App端、核心管理端、数据库<br/>
-	Web端，3台Web服务器做静态化，放置在DMZ中由一台F5做负载均衡、一台防火墙，端口对外。<br/>
-	App端，3台满足业务方面的动态交互的应用，放置在内网由一台F5和防火墙面向DMZ。并通过Web端的反向代理机制把请求路由到App端。<br/>
-	核心管理端，1台高性能服务器做后台管理，业务部日常应用，系统静态发布的，通过部署防篡改机制把静态化后的页面同步发布到Web端，把动态功能同步到App端。<br/>
-	数据库，2台一主一从，定时备份。放在内网由一台路由器连接App端和核心管理端。<br/>
-	门户网站是公司EasySite6.0的产品，启用页面和数据缓存应对动态页面高负载的场景。<br/>
-	其二实施时资源的存取要有效率，减少冗余和不必的流量，首页尽量控制在1.2MB，高质量图像在前端控制滚动到此处再加载，即延时加载。<br/>
-	跨系统接口超时时间要可调节，等待中要有提示。<br/>
-	数据库设计要避免跨系统的大事务。<br/>
-	在系统空闲期间，每天定时回收应用程序池。
-                                    </p>
-                                </li>
-                                <li>
-                                    <span>2012.11~2013.03</span>
-                                    <span>北京中科汇联信息科技…　项目部</span>
-                                    <p>《聚团网》商城类网站 团队中负责开发购买流程，后台管理,用户购买体验的设计与制作，和用户手册的编写。<br/>
-收获：
-做项目全程中要做好沟通，项目进程的透明，定期沟通汇报，让客户清楚他要的是什么，该怎么做，双方的责任在哪。凡事预则立，不预则废。项目前期预算需要的成本（人、才、物），制作项目进程表，需求文档，原型设计等跟客户沟通确认。项目中推进上下阶段的衔接，阶段成果要及时要客户确认，客户反馈问题及时修改。项目后期配合客户做好验收，推进上线。
-                                    </p>
-                                </li>
-                                <li>
-                                    <span>2012.02~2012.10</span>
-                                    <span>北京中科汇联信息科技…　项目部</span>
-                                    <p>中国海关《新闻宣传管理系统》团队中负责Web前端开发、新闻采编发功能和新闻评论与Discuz!NT（开源论坛）的系统互通。<br/>
-收获：
-在多人开发团队，首要是需求文档的解读论证、功能模块划分、做出个人所属的原型和用例，
-各自开展开发中善其事的工具当属源码控制，周例会上汇报进度下阶段安排、影响进度的方面及时反馈。
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- gdm. -->
+    <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit"> </button><input type="hidden" name="sitesearch" value="http://guodunmin.com"></form>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">Home</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">Categories</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">Tags</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">About</a></td>
+                
+                <td>
                     
-                    <!-- gdm:职业技能 -->
-                    <div id="user-skill" class="widget-wrap">
-                        <h3 class="widget-title"><i class="icon fa fa-wrench"></i>职业技能</h3>
-                        <div id="user-skill-list" class="widget">
-                            <ul>
-                                <li>
-                                    <div class="progress-bar-wrap">
-                                        <div class="progress-bar-title">HTML5/CSS3</div>
-                                        <div class="progress-bar-bg fa fa-circle-x10">
-                                            <div class="progress-bar-fg fa fa-clock-o-x10" style="width: 60%"></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="progress-bar-wrap">
-                                        <div class="progress-bar-title">Javascript</div>
-                                        <div class="progress-bar-bg fa fa-circle-x10">
-                                            <div class="progress-bar-fg fa fa-clock-o-x10" style="width: 60%"></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="progress-bar-wrap">
-                                        <div class="progress-bar-title">jQuery
-                                        </div>
-                                        <div class="progress-bar-bg fa fa-circle-x10">
-                                            <div class="progress-bar-fg fa fa-clock-o-x10" style="width: 50%"></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="progress-bar-wrap">
-                                        <div class="progress-bar-title">C#</div>
-                                        <div class="progress-bar-bg fa fa-circle-x10">
-                                            <div class="progress-bar-fg fa fa-clock-o-x10" style="width: 50%"></div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- gdm. -->
-                    <!-- gdm:兴趣爱好 -->
-                    <div id="user-habbit" class="widget-wrap">
-                        <h3 class="widget-title">
-                            <i class="icon fa fa-star"></i><span class="icon star"></span>兴趣爱好</h3>
-                        <div id="user-habbit-list" class="widget">
-                            <ul >
-                                <li>
-                                    <span class="icon favorite-taiji-syqf"><img src="http://7xsur8.com1.z0.glb.clouddn.com/taiji_syqf_youku_150x150_2.png?imageView2/2/w/30/h30" title="陈式太极拳实用拳法"></span>
-                                    <span class="icon fa fa-film"></span>
-                                    <span class="icon fa fa-bicycle"></span>
-                                    <span class="icon fa fa-futbol-o"></span>
-                                    <span class="icon fa fa-internet-explorer"></span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- gdm. -->
-                </div>
-            </section>
-            <aside id="sidebar">
-            </aside>
+    <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="hidden" name="sitesearch" value="http://guodunmin.com"></form>
 
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/assets/avatar_guodunmin.png" />
+            <h2 id="name">郭敦敏</h2>
+            <h3 id="title">Web Developer &amp; Designer</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Beijing, China</span>
+            <a id="follow" target="_blank" href="https://github.com/guodunmin">FOLLOW</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                3
+                <span>posts</span>
+            </div>
+            <div class="article-info-block">
+                1
+                <span>tag</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    <td><a href="https://github.com/guodunmin" target="_blank" title="github"><i class="fa fa-github"></i></a></td>
+                    
+                    <td><a href="http://weibo.com/guodunmin" target="_blank" title="weibo"><i class="fa fa-weibo"></i></a></td>
+                    
+                    <td><a href="/" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></td>
+                    
+                    <td><a href="/" target="_blank" title="dribbble"><i class="fa fa-dribbble"></i></a></td>
+                    
+                    <td><a href="/" target="_blank" title="rss"><i class="fa fa-rss"></i></a></td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main">
+            <article id="post-I-was-complaining-about-this-office-chair" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2016/03/03/I-was-complaining-about-this-office-chair/">I was complaining about this office chair</a>
+        </h1>
+    
+
+                <div class="article-meta">
+                    
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2016/03/03/I-was-complaining-about-this-office-chair/">
+            <time datetime="2016-03-03T05:19:22.000Z" itemprop="datePublished">2016-03-03</time>
+        </a>
+    </div>
+
+
+                    
+                    
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/随笔/">随笔</a>
+    </div>
+
+                    
+<div class="article-date">
+    <span id="busuanzi_container_site_pv">
+        <i class="fa fa-flag"></i>
+        <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Hits
+    </span>
+</div>
+
+                </div>
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p>  我要吐槽，电脑椅气压杆居然晃，松动。（图一 [1]、图二 [2]） 通常要调到最低用，越高越明显，并伴有不祥的关节般作响，实在难以忍受。我要专心工作好吧，活像到了儿童乐园。
+
+“ 真是人善连椅子都骑你 ”
+
+  网上货比三家，不如现场验查。画外音：“让你不听老人言呐 …… #￥%&amp;”
+人在思考时怎么能有这种声音，全面开启屏蔽模式。
+
+让你不听老人言呐 (ràng nǐ bù tīng </p>
+            <p class="article-more-link">
+                <a href="/2016/03/03/I-was-complaining-about-this-office-chair/#more">Read More</a>
+            </p>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://guodunmin.com/2016/03/03/I-was-complaining-about-this-office-chair/" data-id="ciqmhxzbh00048kd465axb4h9" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+        </footer>
+    </div>
+    
+</article>
+
+
+        
+            <article id="post-hello-world-i-am-fine" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2016/03/02/hello-world-i-am-fine/">hello world i am fine</a>
+        </h1>
+    
+
+                <div class="article-meta">
+                    
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2016/03/02/hello-world-i-am-fine/">
+            <time datetime="2016-03-02T05:22:13.250Z" itemprop="datePublished">2016-03-02</time>
+        </a>
+    </div>
+
+
+                    
+                    
+                    
+<div class="article-date">
+    <span id="busuanzi_container_site_pv">
+        <i class="fa fa-flag"></i>
+        <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Hits
+    </span>
+</div>
+
+                </div>
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p>Welcome to guodunmin’s Blog! My chinese name is 郭敦敏, the PinYin is guō dūn mǐn. I have English name too, Dominic Guo, you can call me Domi, my friend.
+</p>
+            <p class="article-more-link">
+                <a href="/2016/03/02/hello-world-i-am-fine/#more">Read More</a>
+            </p>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://guodunmin.com/2016/03/02/hello-world-i-am-fine/" data-id="ciqmhxzbj00068kd4upc8mokw" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+        </footer>
+    </div>
+    
+</article>
+
+
+        
+            <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2016/03/02/hello-world/">Hello World</a>
+        </h1>
+    
+
+                <div class="article-meta">
+                    
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2016/03/02/hello-world/">
+            <time datetime="2016-03-02T05:02:00.875Z" itemprop="datePublished">2016-03-02</time>
+        </a>
+    </div>
+
+
+                    
+                    
+                    
+<div class="article-date">
+    <span id="busuanzi_container_site_pv">
+        <i class="fa fa-flag"></i>
+        <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Hits
+    </span>
+</div>
+
+                </div>
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+¶Quic</p>
+            <p class="article-more-link">
+                <a href="/2016/03/02/hello-world/#more">Read More</a>
+            </p>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://guodunmin.com/2016/03/02/hello-world/" data-id="ciqmhxzbt00098kd4glulk280" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+        </footer>
+    </div>
+    
+</article>
+
+
+        </section>
+            
+                <aside id="sidebar">
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/03/03/I-was-complaining-about-this-office-chair/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2016/03/03/I-was-complaining-about-this-office-chair/" class="title">I was complaining about this office chair</a></p>
+                            <p class="item-date"><time datetime="2016-03-03T05:19:22.000Z" itemprop="datePublished">2016-03-03</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/03/02/hello-world-i-am-fine/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2016/03/02/hello-world-i-am-fine/" class="title">hello world i am fine</a></p>
+                            <p class="item-date"><time datetime="2016-03-02T05:22:13.250Z" itemprop="datePublished">2016-03-02</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/03/02/hello-world/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2016/03/02/hello-world/" class="title">Hello World</a></p>
+                            <p class="item-date"><time datetime="2016-03-02T05:02:00.875Z" itemprop="datePublished">2016-03-02</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script>
-        window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
-    </script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/vendor/perfect-scrollbar-0.6.10.js"></script>
+    
+        
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li></ul>
+        </div>
+    </div>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/随笔/">随笔</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://hexo.io/zh-cn/docs/">Hexo_Docs</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://help.disqus.com">Disqus_Help</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://help.disqus.com/customer/en/portal/topics/107054-developer/articles">Disqus_Developer</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://disqus.com/api/applications/register/">Disqus_API</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://fontawesome.dashgame.com/">Font_Awesome</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div id="toTop" class="fa fa-chevron-up"></div>
+</aside>
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2016 郭敦敏
+	    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1258066109'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1258066109%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+	    <br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+        </div>
+    </div>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</footer>
+<style type="text/css">
+/* //:gdm 20160324 */
+#cnzz_stat_icon_1258066109 img{
+	margin: 0 0 0 3px;
+	vertical-align: bottom;
+}
+</style>
+        
+    
     <script>
-        /*
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-            */
+    var disqus_shortname = 'guodunmin';
+    
+    
+    (function() {
+    var proto = 'https://';
+    var dsq = document.createElement('script');
+    dsq.id = 'dsq-count-scr';
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = proto + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
     </script>
+
+
+
+    
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
 </body>
-
 </html>
