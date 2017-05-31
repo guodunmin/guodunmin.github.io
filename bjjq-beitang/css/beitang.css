@@ -333,7 +333,7 @@ main {}
                 margin: 30px 0 10px;
             }
             .list-lists li {
-                float: left;
+                /*float: left;*/
                 padding: 0.7em 0;
                 border-bottom: 1px dashed #c2c2c2;
                 list-style: none;
