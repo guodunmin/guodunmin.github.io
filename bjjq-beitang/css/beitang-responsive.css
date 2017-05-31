@@ -18,7 +18,35 @@
     }
 }
 */
-
+@media (max-width: 559px) {
+/*
+page: index-list.html
+*/ 
+    .index-list-container {
+        width: 100%;
+    }
+    .list-wrap {
+        width: 100%;
+        padding: 10px 2% 30px;
+    }
+        .list-wrap .list-item-left {
+            width: 100%;
+            padding: 0 0 2em 0;
+        }
+        .list-wrap .list-item-right {
+            display: block;
+        }
+/*
+page: index-details.html
+*/ 
+    .index-details-container {
+        width: 100%;
+    }
+        .article-wrap {
+            width: 100%;
+            padding: 0 2%;
+        }
+}
 @media (min-width: 768px) {
 /*
 page: index.html

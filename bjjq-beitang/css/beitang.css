@@ -333,13 +333,13 @@ main {}
                 margin: 30px 0 10px;
             }
             .list-lists li {
-                float: left;
+                /*float: left;*/
                 padding: 0.7em 0;
                 border-bottom: 1px dashed #c2c2c2;
                 list-style: none;
             }
                 .list-item {
-                    padding: 0.7em 0 0 1%;
+                    padding: 0.7em 0;
                     background-color: transparent;
                     transition: background-color 0.3s ease;
                     color: #fff;
@@ -351,39 +351,53 @@ main {}
                 .list-item:hover div {
                     color: #FFF;
                 }
-                .list-item div {
+                .list-item>div {
                     /*position: relative;*/
-                    float: left;
+                   /* float: left;*/
+                    display: table-cell;
                 }
+                .list-item-left {
+                    width: 200px;
+                    padding: 0 30px 0 5px;
+                }
+                .list-item-right {
+                }
+
+
                 .list-item-date {
-                    width: 25%;
+                    width: 100%;
+                    padding: 0 0 1em 0;
                     color: #999;
                     font-size: 1.4em;
                     font-weight: bolder;
-                    margin: 0px 0px 10px;
                 }
                 .list-item-pic {
-                    width: 25%;
-                    margin: 0px 0px 10px;
+                    width: 100%;
                 }
-                .list-item-pic img {
-                    width: 80%;
-                    border-radius: 4px;
-                }
+                    .list-item-pic a {
+                        width: 100%;
+                        display: block;
+                    }
+                        .list-item-pic img {
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            border-radius: 4px;
+                        }
                 .list-item-title {
-                    width: 74%;
+                    width: auto;
                     font-size: 16px;
                     line-height: 1.75em;
                     color: #338FFF;
-                    margin: 0 0 10px;
+                    margin: 0 0 1.5em;
                     letter-spacing: 2px;
                 }
                 .list-item-summary {
-                    width: 74%;
+                    width: auto;
                     color: #338FFF;
                     font-size: 14px;
                     line-height: 1.8em;
-                    margin: 0 0 20px 0;
+                    margin: 0 0 1em 0;
                     word-wrap: break-word;
                     overflow: hidden;
                 }
@@ -495,6 +509,7 @@ page: index-details.html
                 display:block;
                 padding: 0;
                 margin: 0 auto;
+                border-radius: 8px;
             }
         .art-attachment {
             display: none;
