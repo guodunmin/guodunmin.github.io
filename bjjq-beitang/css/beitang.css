@@ -1,0 +1,506 @@
+.view-size {
+    position: fixed;
+    z-index: 9999;
+    top: 30px;
+    left: 30px;
+    height: 25px;
+    line-height: 25px;
+    padding: 0px 5px;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/*
+page: index.html
+    .navbar
+      .container
+    .gallery-container
+*/
+
+header {}
+.navbar-brand> img.logo {
+    width: 35px;
+    height: 35px;
+    margin: 0 0.5em 0 0;
+}
+.navbar-brand span.logo-white {
+    width: 35px;
+    height:35px;
+    float: left;
+    display:block;
+    background: url('../img/logo-white-35x35.png') no-repeat 0 0;
+}
+.navbar-brand span.logo-txt {
+    line-height: 35px;
+    float: left;
+    display: block;
+}
+.BS-L084,
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #000;
+}
+.BS-L3520,
+.dropdown-menu {
+    background-color: #222;
+}
+.BS-L3552,
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #fff;
+    white-space: nowrap;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #080808;
+}
+.BS-L4166,
+.navbar {
+    margin-bottom: 0px; 
+}
+.BS-L4258,
+.navbar-brand > img {
+    float: left;
+    display: block;
+}
+.BS-L4274,
+.navbar-brand {
+    padding: 0.5em 15px;
+}
+.BS-L4595,
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+.BS-L4606,
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #fff;
+    background-color: #080808;
+}
+.BS-L4653,
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #fff;
+    background-color: #080808;
+}
+
+
+main {
+    background-color: #000;
+}
+    .main-h1 {
+        background: #74C390;
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+        /*transition: .6s ease-in-out left;*/
+    }
+
+    .main-h1-toggle {
+        opacity: 0;
+    }
+
+    /* carousel-fade 自定义过渡效果--淡入淡出 */
+    .carousel-fade .carousel-inner .item {
+        transition: opacity 1s ease;
+        -moz-transition: opacity 1s ease; /* Firefox 4 */
+        -webkit-transition: opacity 1s ease; ; /* Safari 和 Chrome */
+        -o-transition: opacity 1s ease; ; /* Opera */
+    }
+    .carousel-fade .carousel-inner .item,
+    .carousel-fade .carousel-inner .active.left,
+    .carousel-fade .carousel-inner .active.right {
+        opacity: 0;
+    }
+    .carousel-fade .carousel-inner .active,
+    .carousel-fade .carousel-inner .next.left,
+    .carousel-fade .carousel-inner .prev.right {
+        opacity: 1;
+    }
+    .carousel-fade .carousel-inner .next,
+    .carousel-fade .carousel-inner .prev,
+    .carousel-fade .carousel-inner .active.left,
+    .carousel-fade .carousel-inner .active.right {
+        left: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-indicators,
+    .carousel-fade .carousel-control {
+        display: none;
+        z-index: 2;
+    }
+
+    .gallery-container {
+        width: 97.5%;
+    }
+
+    .gallery-container {
+        height: auto;
+        padding:0;
+        margin: 0em auto 3.5em;
+        color: #c5c5c5;
+        background-color: rgba(0,0,0,0.7);
+        position: relative;
+    }
+        .gallery-wrapper {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            padding: 1.5em 0 0 0;
+            
+        }
+        .gallery .pic-block {
+          width: 45%;
+          margin: 0 2.5%;
+          padding: 10px 0;
+          position: relative;
+          float: left;
+        }
+        .gallery .pic-block img {
+          width: 100%;
+          border-radius: 8px;
+          margin: 0 auto;
+          display: block;
+          position: static;
+          top: 0;
+          left: 0;
+          opacity: 1;
+          transition: opacity 0.5s ease;
+        }
+            .gallery .pic-block img:hover {
+                /*opacity: 0;*/
+            }
+        .gallery .pic-block a {
+            color: #fff;
+            display: block;
+            text-decoration: none;
+        }
+        .gallery .pic-block,
+        .gallery .pic-block a:hover {
+            color: #fff;
+        }
+        .gallery .pic-block p {
+          background-color: #000;
+        }
+
+  .campus-container {
+      width: 97.5%;
+  }
+  .campus-container {
+      padding: 0 1em 2em;
+      margin: 0 auto 3.5em;
+      color: #c5c5c5;
+      
+  }
+      .campus h4 {
+          font: 1.2em/1em Oswald;
+          letter-spacing: 0.1em;
+          color: #00bbff;
+          text-align: center;
+      }
+      .campus-wrapper {
+          width: 100%;
+          margin: 0 auto;
+          padding: 20px 0 0 0;
+          background-color: rgba(0,0,0,0.7);
+          position: relative;
+          
+      }
+      .campus .pic-block {
+          width: 45%;
+          padding: 10px 0;
+          margin: 0 2.5%;
+          float: left;
+      }
+      .campus .pic-block img {
+          width: 100%;
+          border-radius: 12px;
+          margin: 0 auto;
+          display: block;
+          position: relative;
+          top: 0;
+          left: 0;
+          opacity: 1;
+      }
+      .campus .pic-block a {
+          color: #fff;
+          display: block;
+          text-decoration: none;
+      }
+      .campus .pic-block,
+      .campus .pic-block a:hover {
+          color: #fff;
+      }
+      .campus .pic-block p {
+          background-color: #000;
+      }
+
+footer {
+}
+footer p {
+    color: #fff;
+    background-color: #222;
+    text-align: center;
+    line-height: 3em;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+page: index-list.html
+    .index-list-container
+        .breadcrumb-wrap
+        .listSide-wrap
+        .list-wrap
+*/
+.BS-L1415,
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+main {}
+.index-list-main {
+    margin: 0px;
+    padding-top: 0.1px; /* 为调整 .breadcrumb-wrap 设置 margin: 120px 0 20px 0; 时出现问题*/
+    background: url('../img/bjjq-bt-cNews-bg10.jpg') no-repeat center 0;
+    background-attachment: fixed;
+}
+    .index-list-container {
+        width: 98%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+        .breadcrumb-wrap {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 1em auto 1em;
+        }
+        .breadcrumb-wrap a {
+            color: #FFF;
+            text-decoration: none;
+        }
+            
+        .BS-L4693,
+        .breadcrumb {
+            margin: 0;
+            padding: 0.5em 1em;
+            line-height: 2em;
+            list-style: none;
+            background-color: rgba(0,0,0,0.7);
+            border-radius: 4px;
+            color: #fff;
+        }
+        .listSide-wrap {
+            display: none;
+        }
+
+        /* .list-wrap */
+        .list-wrap {
+            width: 100%;
+            min-height: 400px;
+            background: rgba(0,0,0,0.7);
+            /*float: right;*/
+            padding: 10px 20px 30px;
+            margin-bottom: 30px;
+            margin: 0 auto 30px;
+            color: #fff;
+        }
+            .list-wrap a {
+                color: #FFF;
+                text-decoration: none;
+            }
+
+            .list-title {
+                display: none;
+                font-size: 24px;
+                line-height: 1.2em;
+                margin: 30px 0 10px;
+            }
+            .list-lists li {
+                float: left;
+                padding: 0.7em 0;
+                border-bottom: 1px dashed #c2c2c2;
+                list-style: none;
+            }
+                .list-item {
+                    padding: 0.7em 0 0 1%;
+                    background-color: transparent;
+                    transition: background-color 0.3s ease;
+                    color: #fff;
+                    cursor: pointer;
+                }
+                .list-item:hover {
+                    background-color: #0e5d40;
+                }
+                .list-item:hover div {
+                    color: #FFF;
+                }
+                .list-item div {
+                    /*position: relative;*/
+                    float: left;
+                }
+                .list-item-date {
+                    width: 25%;
+                    color: #999;
+                    font-size: 1.4em;
+                    font-weight: bolder;
+                    margin: 0px 0px 10px;
+                }
+                .list-item-pic {
+                    width: 25%;
+                    margin: 0px 0px 10px;
+                }
+                .list-item-pic img {
+                    width: 80%;
+                    border-radius: 4px;
+                }
+                .list-item-title {
+                    width: 74%;
+                    font-size: 16px;
+                    line-height: 1.75em;
+                    color: #338FFF;
+                    margin: 0 0 10px;
+                    letter-spacing: 2px;
+                }
+                .list-item-summary {
+                    width: 74%;
+                    color: #338FFF;
+                    font-size: 14px;
+                    line-height: 1.8em;
+                    margin: 0 0 20px 0;
+                    word-wrap: break-word;
+                    overflow: hidden;
+                }
+            .list-pager {
+                margin: 0;
+            }
+            .list-pager nav {
+                text-align: center;
+            }
+
+/*
+page: index-details.html
+    .index-details-container
+        .breadcrumb-wrap
+        .article-wrap
+        .articleSide-wrap
+*/
+.index-details-main {
+    margin: 0px;
+    padding-top: 0.1px; /* 为调整 .breadcrumb-wrap 设置 margin: 120px 0 20px 0; 时出现问题*/
+    background: url('../img/bjjq-bt-cNews-bg10.jpg') no-repeat center 0;
+    background-attachment: fixed;
+}
+.index-details-container {
+    width: 98%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+    /* .article-wrap */
+    .article-wrap {
+        width: 100%;
+        min-height: 400px;
+        background: rgba(0,0,0,0.7);
+        /*float: right;*/
+        padding: 10px 20px 30px;
+        margin-bottom: 30px;
+        margin: 0 auto 30px;
+        color: #fff;
+    }
+    /* .breadcrumb-wrap */
+
+    /* .article-wrap */
+    .article-wrap {
+        width: 100%;
+        float: none;
+        margin-bottom: 30px;
+        padding: 0 1%;
+        border-right: 0px solid #ccc;
+    }
+        .article-wrap article>div {
+            margin-bottom: 10px;
+        }
+        .art-title {
+            font-size: 1.875em; /* 28px = 16x0.8x2.1875 */
+        }
+        .art-info-wrap {
+            width: 100%;
+        }
+        .art-info-wrap div {
+            min-height: 2em;
+            line-height: 2em;
+            text-align: left;
+            padding: 0;
+            margin: 0 0 5px 0;
+        }
+            .art-date {
+                width: 50%;
+                float: left;
+            }
+            .art-column {
+                color:#F34747; 
+            }
+            .art-readNum {
+                width: 50%;
+                float: right;
+            }
+            .art-infos {
+                width: 50%;
+                float: left;
+            }
+            .art-share {
+                width: 50%;
+                float: right;
+                /*background: url(../img/bjd-artShare.jpg) no-repeat 0 0;*/
+            }
+        .art-summary {
+            font-size: 1em;
+            line-height: 2em;
+            width: 100%;
+            background-color: #227D5B;
+            padding:1em;
+            border: 0px solid #FFF;
+            border-radius: 4px;
+        }
+            .art-summary strong {
+                font-weight: normal;
+            }
+        .art-content {
+            font-size: 16px;
+            line-height: 1.8em;
+            min-height: 0;
+            padding: 1em 0;
+        }
+            .art-content p {
+                text-indent: 2em;
+            }
+            .art-content p img {
+                max-width: 100%;
+                display:block;
+                padding: 0;
+                margin: 0 auto;
+            }
+        .art-attachment {
+            display: none;
+        }
+    
+    .articleSide-wrap {
+        display: none;
+    }
+
