@@ -1,0 +1,159 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>天主教北京教区</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/fju.css">
+        <link rel="stylesheet" href="css/fju-responsive.css">
+        <link rel="stylesheet" href="css/swiper.css">
+        <link rel="stylesheet" href="css/bjd-swiper.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- header -->
+        <header role="banner">
+            <div class="ct-header">
+                <div class="bjd-logo-wrapper">
+                    <div class="bjd-logo">
+                        <a href="#">天主教北京教区</a>
+                        <div type="button" class="bjd-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            堂区版<span class="caret"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bjd-collapse" aria-expanded="true">
+                    <ul class="">
+                        <li><a href="" >西什库教堂</a></li>
+                        <li><a href="" >宣武门教堂</a></li>
+                        <li><a href="" >王府井教堂</a></li>
+                        <li><a href="" >西直门教堂</a></li>
+                        <li><a href="" >东交民巷教堂</a></li>
+                        <li><a href="" >南岗子教堂</a></li>
+                        <li><a href="" >东管头教堂</a></li>
+                        <li><a href="" >长辛店教堂</a></li>
+                        <li><a href="" >后八家教堂</a></li>
+                        <li><a href="" >......</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!--<nav role="navigation" class="ct-navbar navbar navbar-static-top navbar-default">-->
+            <nav role="navigation" class="ct-navbar clearfix">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-active"><a href="#" class="select-on">网站首页</a></div>
+                        <div class="swiper-slide"><a href="#">北京教区</a></div>
+                        <div class="swiper-slide"><a href="#">教会新闻</a></div>
+                        <div class="swiper-slide"><a href="#">礼仪生活</a></div>
+                        <div class="swiper-slide"><a href="#">圣经天地</a></div>
+                        <div class="swiper-slide"><a href="#">修院生活</a></div>
+                        <div class="swiper-slide"><a href="#">认识天主</a></div>
+                        <div class="swiper-slide"><a href="#">每日敬礼</a></div>
+                        <div class="swiper-slide"><a href="#">教会文献</a></div>
+                        <div class="swiper-slide"><a href="#">艺术欣赏</a></div>
+                        <div class="swiper-slide"><a href="#">灵修家园</a></div>
+                        <div class="swiper-slide"><a href="#">服务中心</a></div>
+                        <div class="swiper-slide"><a href="#">联系我们</a></div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </nav>
+        </header>
+<main role="main" class="clearfix" id="vue-page-index">
+    <div class="news-container container">
+<div class="articleList" v-for="(item, index) in articleList">
+        <article class="clearfix" v-if="item.images_top_big">
+            <div class="news-img-wrapper">
+                <div class="pic">
+                    <a :href="'details.html?aid='+item.id" ><img :src="item.images_thumbs" :title="item.title" /></a>
+                </div>
+                <div class="title">
+                    <a :href="'details.html?aid='+item.id" :title="item.title">{{ item.title }}</a>
+                </div>
+                <div class="info-wrapper clearfix">
+                    <div class="art-flag-totop"></div>
+                    <div class="from"><span class="glyphicon glyphicon-home"></span>{{ item.from }}</div>
+                    <div class="date"><span class="glyphicon glyphicon-time"></span>{{ item.created | dateFormat }}</div>
+                    <div class="readNum"><span class="glyphicon glyphicon-eye-open"></span>{{ item.readNum }} 阅</div>
+                </div>
+            </div>
+        </article>
+        <article class="clearfix" v-else-if="item.images_count == 1">
+            <div class="news-imgtxt-wrapper">
+                <div class="news-imgtxt-txt">
+                    <div class="title">
+                        <a :href="'details.html?aid='+item.id" :title="item.title">{{ item.title }}</a>
+                    </div>
+                    <div class="info-wrapper clearfix">
+                        <div class="art-flag"></div>
+                        <div class="from">{{ item.from }}</div>
+                        <div class="date">{{ item.created | dateFormat }}</div>
+                        <div class="readNum">阅 {{ item.readNum }}</div>
+                    </div>
+                </div>
+                <div class="news-imgtxt-pic">
+                    <div class="pic">
+                        <a href="javascript:void(0);"><img :src="item.images_thumbs" :title="item.title" /></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="clearfix" v-else-if="item.images_count > 1">
+            <div class="news-imgtxt-wrapper">
+                <div class="news-imgtxt-txtB">
+                    <div class="title">
+                        <a :href="'details.html?aid='+item.id" :title="item.title">{{ item.title }}</a>
+                    </div>
+                    <div class="info-wrapper clearfix">
+                        <div class="art-flag"></div>
+                        <div class="from">{{ item.from }}</div>
+                        <div class="date">{{ item.created | dateFormat }}</div>
+                        <div class="readNum">阅 {{ item.readNum }}</div>
+                    </div>
+                </div>
+                <div class="news-imgtxt-picB">
+                    <div class="pic" v-for="picItem in item.images_thumbs">
+                        <a href="#"><img :src="picItem" :title="item.title" /></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+</div>
+
+        <div id="bak-load-more" class="more-news" v-on:click="ajaxLoadPost()">
+            <a>
+                <span class="icon glyphicon glyphicon-cloud-download"></span>
+                <span class="text" >更多资讯</span>
+            </a>
+        </div>
+    </div>
+</main>
+<footer role="" class="clearfix">
+</footer>
+
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="js/vendor/vue.js"></script>
+        <script src="js/vendor/vue-resource.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/swiper.js"></script>
+        <script src="js/myAjax.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/main-vue.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,302 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>天主教北京教区</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/fju.css">
+        <link rel="stylesheet" href="css/fju-responsive.css">
+        <link rel="stylesheet" href="css/swiper.css">
+        <link rel="stylesheet" href="css/bjd-swiper.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <style>
+            html, body{ 
+                margin:0px; 
+                height:100%;
+            }
+            .pannel-container {
+
+            }
+                .pannel-top {
+                    width: 100%;
+                    height: 50px;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    padding: 0 0;
+                    z-index: 1;
+                    background-color: #f4f5f6;
+                    border-bottom: 1px solid #ddd;
+                    color: #333333;
+                    display: none;
+                }
+                .pannel-top span {
+                    margin: 0 10px 0 0;
+                }
+                .pannel-top a {
+                    color: #333333;
+                    display: inline-block;
+                    line-height: 50px;
+                    padding: 0 20px;
+                    text-align: left;
+                    /*word-spacing: 0.5em;*/
+                    letter-spacing: 0.1em;
+                }
+                .pannel-mid {
+                    width: 100%;
+                    height: auto;
+                    margin: 0 auto;
+                    position: fixed;
+                    top: 50px;
+                    right: 0;
+                    bottom: 92px;
+                    left: 0;
+                    z-index: 1;
+                    background: rgba(0,0,0,0.1);
+                    display: none;
+                }
+                .pannel-mid-on {
+                    height: 100%;
+                    background: rgba(0,0,0,0.1);
+                    display: block;
+                    z-index: 3;
+                }                
+                .pannel-bottom {
+                    width: 100%;
+                    padding: 8px 0;
+                    position: fixed;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 1;
+                    background-color: #f4f5f6;
+                    border-top: 1px solid #ddd;
+                    color: #333333;
+                    display: none;
+                }
+                    .swiper-container {
+                        width: 98%;
+                        height: auto;
+                        padding: 0 0;
+                        margin: 0 auto;
+                        box-sizing: border-box;
+                    }
+                        .swiper-slide {
+                            text-align: center;
+                            font-size: 22px;
+                            background: transparent;
+                            width: 22%;
+                            background: none;
+                            padding: 0 2px 0 0;
+                            margin: 0 0 0 0;
+                            color: #505050;
+                        }
+                        .swiper-slide:hover {
+                            background-color: #F0F0F0;
+                        }
+                        .swiper-slide img {
+                            width: 45px;
+                            height: 45px;
+                            padding: 0 0;
+                            margin: 0.1em;
+                            border: 0 none;
+                            outline: none;
+                        }
+                        .swiper-slide span {
+                            font-size: 0.6em;
+                            line-height: 2em;
+                            display: block;
+                            border: 0 none;
+                            outline: none;
+                            text-align: center;
+                        }
+
+            .scroll-container {
+                height: 100%;
+                overflow: hidden;
+                position: relative;
+            }
+            .scroll-wrap {
+                position: absolute;
+                top: 0px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                overflow-y: scroll; 
+            }
+            .scroll-lock {
+                overflow-y: hidden; 
+            }
+            .moveArea {
+                width: 100%;
+                height: 40%;
+                position: absolute;
+                top:30%;
+                right:0;
+                bottom:0;
+                left:0;
+                background-color: rgba(0,255,0,0.1);
+                z-index: 0;
+            }
+        </style>
+        <div style="display:block;" class="pannel-container">
+            <!--返回-->
+            <div id="pannel-top" class="pannel-top">
+                <a href="index.html"><span class="glyphicon glyphicon-arrow-left"></span>返回首页</a>
+            </div>
+            <!--遮罩层-->
+            <div class="pannel-mid">
+            </div>
+            <!--分享面板-->
+            <div class="pannel-bottom" id="">
+                <div class="swiper-container swiper-container-horizontal">
+                    <div class="swiper-wrapper clearfix">
+                        <div class="swiper-slide">
+                            <img src="img/douban-ic_friends.png"></img>
+                            <span>微信朋友圈</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/douban-ic_wechat.png"></img>
+                            <span>发送给朋友</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/douban-ic_qq.png"></img>
+                            <span>QQ好友</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/douban-ic_qzone.png"></img>
+                            <span>QQ空间</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/douban-ic_weibo.png"></img>
+                            <span>新浪微博</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/douban-ic_copyLink.png"></img>
+                            <span>复制链接</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/douban-ic_more.png"></img>
+                            <span>更多功能</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div style="display:none;" class="moveArea">mouse move area</div>
+        </div>
+        <div class="scroll-container">
+            <div class="scroll-wrap">
+                <main role="main" class="" id="vue-page-details">
+                    <div class="article-container" v-for="item in articleItem">
+                        <div class="article-wrapper">
+                            <div class="art-title">
+                                <h1>{{ item.title }}</h1>
+                            </div>
+                            <div class="art-info-wrapper clearfix">
+                                <div class="art-from">
+                                    <span class="glyphicon glyphicon-home"></span>{{ item.from }}
+                                </div>
+                                <div class="art-date">
+                                    <span class="glyphicon glyphicon-time"></span>{{ item.created }}
+                                </div>
+                                <div class="art-readNum">
+                                    <span class="glyphicon glyphicon-eye-open"></span>{{ item.readNum }} 阅
+                                </div>
+                                <div class="art-share button" v-on:click="shareBtn()">
+                                    <span class="icon glyphicon glyphicon-share-alt"></span><span class="text">分享</span>
+                                </div>
+                                <div class="art-textSize button" v-on:click="zoomTextBtn()">
+                                    <span class="icon glyphicon glyphicon-text-size"></span><span class="text textSize">大</span>
+                                </div>
+                            </div>
+                            <div class="art-img" >
+                                <img v-for="picItem in item.images_thumbs" src="img/thumb-default-small.png" :src="picItem" style="width:120px; height:120px;" :style="{ width:'100%', height:'100%' }" :title="item.title" />
+                            </div>
+                            <div class="art-content">
+                                <div id="art-content-inner" class="art-content-inner" v-html="item.content"></div>
+                                <p>&nbsp;</p>
+                                <div class="art-endline-wrapper clearfix">
+                                    <div class="art-endline-line"></div>
+                                    <div class="art-endline-text">THE END</div>
+                                </div>
+                            </div>
+                            <div style="display:none;" class="art-admire">赞赏</div>
+                        </div><!-- .article-wrapper -->
+                    </div>
+                    <div class="article-related-container separator-line clearfix">
+                        <div class="article-related-wrapper">
+                            <div class="art-related-title"><span class="icon"></span><span class="text">相关推荐</span></div>
+                            <div class="art-related-list">
+                                <article class="clearfix">
+                                    <div class="news-imgtxt-wrapper">
+                                        <div class="news-imgtxt-txt">
+                                            <div class="title">
+                                                <a href="http://www.catholic-bj.org/content.php?id=5583&fuid=61&tid=61" title="【特写】西堂：神长教友捐助邢台火灾教堂">【特写】西堂：神长教友捐助邢台火灾教堂</a>
+                                            </div>
+                                            <div class="info-wrapper clearfix">
+                                                <div class="info-wrapper clearfix">
+                                                    <div class="art-flag-recommend"></div>
+                                                    <div class="from">天主教北京教区</div>
+                                                    <div class="date">02月07日 08:30</div>
+                                                    <div class="readNum">阅 8790</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="news-imgtxt-pic">
+                                            <div class="pic">
+                                                <a href="#"><img src="img/bjd-cJQXX-001.jpg" title="【特写】西堂：神长教友捐助邢台火灾教堂" /></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div><!-- .article-related-wrapper -->
+                    </div>
+                </main>
+                <footer role="footer" class="clearfix">
+                    <div class="website-info-container separator-line clearfix">
+                        <div class="website-info-wrapper">
+                            <!--Copyright and Disclaimer-->
+                            <div class="website-copyright-disclaimer">
+                                <p>天主教北京教区网版权及免责声明</p>
+                                <p>1、凡本网注明"来源：天主教北京教区"、"本站讯"的所有内容，版权均属于本教区所有。内容欢迎转载，但请注明出处。</p>
+                                <p>2、凡本网注明"来源：XXX（非本教区或本网站）"的内容，均转载自其它媒体，转载目的在于传递更多信息，并不代表本网赞同其观点和对其真实性负责。</p>
+                                <p>3、凡教区、堂区或个人投稿，版权虽属本网，但文责由投稿者自负。</p>
+                            </div>
+                            <div class="website-copyright">
+                                <p>版权及免责声明</p>
+                                <p>&copy 2009-2017 天主教北京教区</p>
+                                <p>京ICP备16003978号</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="js/vendor/vue.js"></script>
+        <script src="js/vendor/vue-resource.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/swiper.js"></script>
+        <script src="js/myAjax.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/main-vue.js"></script>
+
+    </body>
+</html>
